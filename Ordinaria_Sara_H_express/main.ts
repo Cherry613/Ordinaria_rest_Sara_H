@@ -4,7 +4,7 @@ import express from "npm:express@4.18.2";
 import { load } from "https://deno.land/std@0.204.0/dotenv/mod.ts";
 const env = await load();
 
-const MONGO_URL = env.MONGO_URL || Deno.env.get("MONGO_URL");
+/*const MONGO_URL = env.MONGO_URL || Deno.env.get("MONGO_URL");
 
 if(!MONGO_URL) {
   console.log("No Mongo URL found");
@@ -16,7 +16,7 @@ try{
   console.log("Conectado a mongo");
 }catch(error){
   console.log(error.message);
-}
+}*/
 
 //con express
 const app = express();
